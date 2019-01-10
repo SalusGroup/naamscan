@@ -2669,3 +2669,23 @@ section {
   min-height: 70px;
   padding-top:20px;
 }
+
+.logoContainer {
+  text-align: center;
+  padding:0px;
+}
+
+.logoContainer:after {
+   display: inline-block;
+}
+.logoContainer:before {
+  display: block;
+}
+
+.logoContainer img {
+  display: inline-block;
+  position: relative;
+  padding-left:5px;
+  padding-right:5px;
+  padding-bottom: 20px;
+}
