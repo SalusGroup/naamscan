@@ -2689,3 +2689,10 @@ section {
   padding-right:5px;
   padding-bottom: 20px;
 }
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
