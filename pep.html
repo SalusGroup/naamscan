@@ -20,7 +20,7 @@
   <meta content="NaamScan.nl verzorgt sanctiechecks en PEP checks voor bedrijven" name="description">
 
   <!-- Favicons -->
-  <link href="img/LogoKleinNS.png" rel="icon">
+  <link href="img/NaamScanTransparantKlein.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -329,8 +329,19 @@
   <script src="js/main.js"></script>
 
   <script>
-      $("#header").load("header.html");
-      $("#footer").load("footer.html");
+    ($("#header").load("header.html", (responseTxt, statusTxt, xhr) => {
+      if (statusTxt == "success")
+        $(".panel a").click(function (e) {
+          e.preventDefault();
+          var style = $(this).attr("class");
+          $(".jetmenu").removeAttr("class").addClass("jetmenu").addClass(style);
+        });
+      $().jetmenu();
+      if (statusTxt == "error")
+        console.log("Error: " + xhr.status + ": " + xhr.statusText);
+    })
+    );
+    $("#footer").load("footer.html");
 </script>
 
 </body>

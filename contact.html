@@ -23,7 +23,7 @@
   <meta content="NaamScan.nl verzorgt sanctiechecks en PEP checks voor bedrijven" name="description">
 
   <!-- Favicons -->
-  <link href="img/LogoKleinNS.png" rel="icon">
+  <link href="img/NaamScanTransparantKlein.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -107,7 +107,7 @@
             <div class="form-group">
               <input class="form-control" name="origin" id="contact-origin" value="naamscan.nl" style="visibility: hidden;"></textarea>
               <div class="validate"></div>
-            </div>1
+            </div>
 
             <div class="loading"></div>
             <div class="error-message">Oeps, er is iets fout gegaan. U kunt ons bereiken op 024 2340 700</div>
@@ -245,18 +245,29 @@
   <script src="js/main.js"></script>
 
   <script>
-    $("#header").load("header.html");
+    ($("#header").load("header.html", (responseTxt, statusTxt, xhr) => {
+      if (statusTxt == "success")
+        $(".panel a").click(function (e) {
+          e.preventDefault();
+          var style = $(this).attr("class");
+          $(".jetmenu").removeAttr("class").addClass("jetmenu").addClass(style);
+        });
+      $().jetmenu();
+      if (statusTxt == "error")
+        console.log("Error: " + xhr.status + ": " + xhr.statusText);
+    })
+    );
     $("#footer").load("footer.html");
   </script>
 
-  <!-- <script>
+  <script>
     const urlParams = new URLSearchParams(window.location.search);
     const subject = urlParams.get('subject');
     console.log("SUBJECT:", subject);
     if (subject) {
       $("input[name='Onderwerp']").text(subject);
     }
-  </script> -->
+  </script>
 
 </body>
 
