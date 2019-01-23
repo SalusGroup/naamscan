@@ -2696,3 +2696,9 @@ section {
   display: -ms-flexbox;
   display:         flex;
 }
+
+.btn-primary.custom-btn {
+	background-color: #f20253;
+  border-color: #f20253;
+  outline: none;
+}
