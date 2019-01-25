@@ -311,7 +311,7 @@
   <script src="js/main.js"></script>
 
  <script>
-    ($("#header").load("header.html", (responseTxt, statusTxt, xhr) => {
+    ($("#header").load("header.html", function (responseTxt, statusTxt, xhr) {
       if (statusTxt == "success")
         $(".panel a").click(function (e) {
           e.preventDefault();
