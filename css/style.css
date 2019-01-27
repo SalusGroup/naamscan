@@ -1386,7 +1386,8 @@ body.nobg .section1 {
   background: #FFFFFF;
   border: 1px solid #DCDBD7;
   margin: 30px 0;
-  padding: 30px 20px 35px;
+  padding: 30px 5px 35px;
+  height: 700px;
   text-align: center;
 }
 
@@ -1421,9 +1422,18 @@ body.nobg .section1 {
   background: #2B2E31 !important;
 }
 
+.list-box {
+  height: 400px;
+  width: 290px;
+  text-align: center;
+}
+
 .pricing {
   list-style: none;
-  padding: 10px 0 20px;
+  padding: padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
 }
 
 .pricing li {
@@ -1433,7 +1443,7 @@ body.nobg .section1 {
   line-height: 34px;
   margin: 0 auto;
   padding: 0;
-  text-align: center;
+  text-align: left;
   width: 70%;
   -webkit-transition: background-color .4s linear, color .4s linear;
   -moz-transition: background-color .4s linear, color .4s linear;
