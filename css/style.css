@@ -477,6 +477,22 @@ body.nobg .section1 {
   text-align: center;
 }
 
+#intros1 {
+  color: #ffffff;
+  background: url(../img/14.jpg) center center no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#intros2 {
+  color: #000000;
+  background: url(../img/10.jpg) center center no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0;
+  text-align: center;
+}
+
 #intro h1 {
   color: #ffffff;
   padding: 0;
