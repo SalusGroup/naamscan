@@ -2,16 +2,77 @@
 <html lang="NL">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129737799-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- JQUERY SHOULD BE THE FIRST TO LOAD -->
+  <script src="lib/jquery/jquery.min.js"></script>
 
-  gtag('config', 'UA-129737799-2');
-</script>
+  <!-- BEGIN -->
+  <!-- GOOGLE ANALYTICS -->
+  <!--
+      Script below adds the following scripttag to the page body:
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129737799-2"></script>
+      and activates Google Analiytics on the page.
+      This function is only executed when the user has enabled analytics in his cookiepreferences
+  -->
+  <script>
+    function activateGoogleAnalytics() {
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = "https://www.googletagmanager.com/gtag/js?id=UA-129737799-2";
+      script.async = true;
+      $("body").append(script);
 
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-129737799-2');
+    }
+  </script>
+  <!-- GOOGLE ANALYTICS -->
+  <!-- END -->
+
+  <!-- BEGIN -->
+  <!-- I-HAVE-COOKIES scripts -->
+  <link href="css/cookies.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.ihavecookies.js"></script>
+  <script type="text/javascript">
+    var options = {
+      title: '&#x1F36A; Accept Cookies & Privacy Policy?',
+      message: 'There are no cookies used on this site, but if there were this message could be customised to provide more details. Click the <strong>accept</strong> button below to see the optional callback in action...',
+      delay: 600,
+      expires: 1,
+      link: '#privacy',
+      onAccept: function () {
+        var myPreferences = $.fn.ihavecookies.cookie();
+        console.log('Yay! The following preferences were saved...');
+        console.log(myPreferences);
+        if (myPreferences.includes('analytics')) {
+          activateGoogleAnalytics();
+        }
+      },
+      uncheckBoxes: false,
+      acceptBtnLabel: 'Accept Cookies',
+      moreInfoLabel: 'More information',
+      cookieTypesTitle: 'Select which cookies you want to accept',
+      fixedCookieTypeLabel: 'Essential',
+      fixedCookieTypeDesc: 'These are essential for the website to work correctly.'
+    }
+    $(document).ready(function () {
+      $('body').ihavecookies(options);
+      if ($.fn.ihavecookies.preference('marketing') === true) {
+        console.log('This should run because marketing is accepted.');
+      }
+      if ($.fn.ihavecookies.preference('analytics') === true) {
+        activateGoogleAnalytics();
+      }
+      $('#ihavecookiesBtn').on('click', function () {
+        $('body').ihavecookies(options, 'reinit');
+      });
+    });
+  </script>
+  <!-- I-HAVE-COOKIES scripts -->
+  <!-- END -->
 
   <meta charset="utf-8">
   <title>NaamScan.nl</title>
@@ -65,7 +126,7 @@
       <!-- end container -->
     </div>
     <!-- end topbar -->
-  
+
     <header id="header" class="header"></header>
     <!-- end header -->
 
@@ -99,7 +160,7 @@
           <!-- servicebox -->
         </div>
         <!-- large-4 -->
-  
+
         <div class="col-lg-4 col-md-4 col-sm-4">
           <div class="servicebox text-center">
             <div class="service-icon">
@@ -117,7 +178,7 @@
           <!-- servicebox -->
         </div>
         <!-- large-4 -->
-  
+
         <div class="col-lg-4 col-md-4 col-sm-4">
           <div class="servicebox text-center">
             <div class="service-icon">
@@ -147,28 +208,28 @@
         <h3>De Sanctiewet; actueler dan ooit. Ook voor jou.</h3>
 
           <p>De politieke onrust op de Krim, de gebeurtenissen met MH17, de verenigde staten die het handelsverdrag met Iran opzeggen, de EU die juist stimuleren om zaken te doen in Iran, sancties tegen personen en bedrijven in Rusland, het is slechts een kleine greep van het nieuws omgeven met sancties.</p>
-          
+
           <h3>Wat zijn sancties?</h3>
           <p>Sancties zijn maatregelen tegen landen, bedrijven en mensen met als doel het gedrag te veranderen. Ook worden sancties als strafmaatregelen ingezet.</p>
-          
+
           <h3>Wie stellen de sancties in?</h3>
           <p>Meest bekend zijn de sancties van de OFAC (Amerikaanse sancties), Europese Unie en Verenigde Naties. Maar ook landen kunnen zelf een sanctielijst hebben. Nederland heeft een eigen sanctielijst, net zoals Zwitserland. Welke sanctielijsten van toepassing zijn hangt af van wie je klant is, waar deze vandaan komt en welke wetten van toepassing zijn. </p>
-          
+
           <h3>Waarom is dit belangrijk?</h3>
           <p>Met de toenemende onrust in de wereld, neemt het toezicht op handhaving van de sanctiewet toe. Het openbaar ministerie heeft in 2018 aangegeven dat handhaving van de sanctiewet een speerpunt wordt. De straffen voor overtreding van de sanctiewet lopen uit een van miljoenen euro’s tot aan strafrechtelijke vervolging van directie en eigenaren. Vergeet ook vooral de reputatieschade niet.</p>
-          
+
           <h3>Wat kan ik doen?</h3>
           <p>Het screenen van relaties in het buitenland is een goed startpunt. Staat jouw afnemer op de sanctielijsten, bedank jezelf dan heel goed of je zaken wilt doen met zo’n partij. Daarnaast is het goed stil te staan bij jouw eigen risicobeleid. Doe ik zaken met hoog risicolanden? De marges zijn vaak hoger, maar de risico’s ook. Heb ik die goed inzichtelijk? En als het dan fout gaat ondanks mijn eigen maatregelen, weet je dan wat je moet doen?</p>
-          
+
           <p><i>Mijn naam is Silver de Bruijn, eigenaar van NaamScan.nl. Mijn passie is het helpen van het MKB. Compliance wordt vaak als vervelend ervaren, daar ga ik niet tegenin. Maar non-compliance is nog veel vervelender. Daarom ben ik NaamScan.nl begonnen. Met innovatieve tools help ik het MKB om te kunnen ondernemen in risicovolle landen. </i></p>
-                    
+
         </p>
         <!-- <blockquote class="pull-right">
           <p>Handelaren in goederen die contante betalingen van €10.000 of meer ontvangen, worden als instelling gezien onder de WWFT. Dat zijn niet alleen handelaren in boten of trucks, maar bijvoorbeeld ook keukenzaken</p>
           <small>Silver de Bruijn<cite title="Source Title"></cite></small>
         </blockquote> -->
         <div class="clearfix"></div>
-        
+
       </div>
       <!-- end content -->
     </div>
@@ -181,7 +242,7 @@
       <div class="message text-center">
         <h2 class="big-title">Komen uw relaties voor op <span>sanctie</span> lijsten?</h2>
         <p class="small-title">Sreening op hoogwaardig niveau. Snel, veilig en accuraat.</p>
-        <a class="button large" href="prijzen.html">Start nu</a> 
+        <a class="button large" href="prijzen.html">Start nu</a>
       </div>
       <!-- end message -->
     </div>
@@ -271,7 +332,7 @@
                   <h2>Doet u internationaal zaken? Hou dan rekening met de sanctiewet</h2>
                   <h6>Iedere onderneming in Nederland valt onder de Sanctiewet 1977. U dus ook.</h6>
                   <p> Doet u zaken in het buitenland? Dan is het verplicht om uit te zoeken of er beperkende maatregelen gelden tegen dat land, bedrijf en/of persoon.</p>
-                  <p> Sancties zijn maatregelen om de internationale vrede en veiligheid te bewaren. De Sanctiewet 1977 is bedoeld om bijvoorbeeld ongewenste handel, witwassen en terrorisme te bestrijden. Nederland voert met deze wet internationale sanctieregels uit van vooral de Verenigde Naties en de Europese Unie. 
+                  <p> Sancties zijn maatregelen om de internationale vrede en veiligheid te bewaren. De Sanctiewet 1977 is bedoeld om bijvoorbeeld ongewenste handel, witwassen en terrorisme te bestrijden. Nederland voert met deze wet internationale sanctieregels uit van vooral de Verenigde Naties en de Europese Unie.
                     Omdat iedereen onder de Sanctiewet valt, dient ook u te voldoen aan de sanctiewet.</p>
                   <div class="clearfix"></div>
                   <blockquote>
@@ -279,7 +340,7 @@
                     <small>Paul McNulty<cite title="Source Title"></cite></small>
                   </blockquote>
                   <div class="clearfix"></div>
-                  <p>De Sanctiewet is op iedereen van toepassing. Bepaalde sectoren, met name de sectoren die onder de WWFT vallen, dienen extra aandacht te vestigen op de Sanctiewet. Ook zgn. Sanctielanden brengen meer risico met zich mee. Voorbeelden van sanctielanden zijn Rusland, 
+                  <p>De Sanctiewet is op iedereen van toepassing. Bepaalde sectoren, met name de sectoren die onder de WWFT vallen, dienen extra aandacht te vestigen op de Sanctiewet. Ook zgn. Sanctielanden brengen meer risico met zich mee. Voorbeelden van sanctielanden zijn Rusland,
                     Oekraine, Wit-Rusland, verschillende Afrikaanse landen en Iran (dit lijstje is niet limitatief. Neem contact op voor meer informatie over sanctielanden)
                   </p>
                   <blockquote class="pull-right">
@@ -376,7 +437,6 @@
     <div class="dmtop">Scroll to Top</div>
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
   <script src="lib/php-mail-form/validate.js"></script>
   <script src="lib/prettyphoto/js/prettyphoto.js"></script>
