@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="NL">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="/manifest.json">
+  <title>React App</title>
+  <link href="/static/css/main.aaa55e92.chunk.css" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- JQUERY SHOULD BE THE FIRST TO LOAD -->
+  <script src="lib/jquery/jquery.min.js"></script>
+
+  <!-- BEGIN -->
+  <!-- GOOGLE ANALYTICS -->
+  <!--
+      Script below adds the following scripttag to the page body:
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129737799-2"></script>
+      and activates Google Analiytics on the page.
+      This function is only executed when the user has enabled analytics in his cookiepreferences
+  -->
+  <script>
+    function activateGoogleAnalytics() {
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = "https://www.googletagmanager.com/gtag/js?id=UA-129737799-2";
+      script.async = true;
+      $("body").append(script);
+
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-129737799-2');
+    }
+  </script>
+  <!-- GOOGLE ANALYTICS -->
+  <!-- END -->
+
+  <!-- BEGIN -->
+  <!-- I-HAVE-COOKIES scripts -->
+  <link href="css/cookies.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.ihavecookies.js"></script>
+  <script type="text/javascript">
+    var options = {
+      title: '&#x1F36A; Accept Cookies & Privacy Policy?',
+      message: 'There are no cookies used on this site, but if there were this message could be customised to provide more details. Click the <strong>accept</strong> button below to see the optional callback in action...',
+      delay: 600,
+      expires: 1,
+      link: '#privacy',
+      onAccept: function () {
+        var myPreferences = $.fn.ihavecookies.cookie();
+        console.log('Yay! The following preferences were saved...');
+        console.log(myPreferences);
+        if (myPreferences.includes('analytics')) {
+          activateGoogleAnalytics();
+        }
+      },
+      uncheckBoxes: false,
+      acceptBtnLabel: 'Accept Cookies',
+      moreInfoLabel: 'More information',
+      cookieTypesTitle: 'Select which cookies you want to accept',
+      fixedCookieTypeLabel: 'Essential',
+      fixedCookieTypeDesc: 'These are essential for the website to work correctly.'
+    }
+    $(document).ready(function () {
+      $('body').ihavecookies(options);
+      if ($.fn.ihavecookies.preference('marketing') === true) {
+        console.log('This should run because marketing is accepted.');
+      }
+      if ($.fn.ihavecookies.preference('analytics') === true) {
+        activateGoogleAnalytics();
+      }
+      $('#ihavecookiesBtn').on('click', function () {
+        $('body').ihavecookies(options, 'reinit');
+      });
+    });
+  </script>
+  <!-- I-HAVE-COOKIES scripts -->
+  <!-- END -->
+
+  <meta charset="utf-8">
+  <title>NaamScan.nl</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="AML, WWFT, Sancties, PEP, PEP Check, Sanctiewet, KYC, Zekerheid, MOT melding, MOTmelding, SalusCheck, Naam Scanner, NaamScan.nl, NaamScan"
+    name="keywords">
+  <meta content="NaamScan.nl verzorgt sanctiechecks en PEP checks voor bedrijven" name="description">
+
+  <!-- Favicons -->
+  <link href="img/NaamScanTransparantKlein.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Ruda:400,900,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/prettyphoto/css/prettyphoto.css" rel="stylesheet">
+  <link href="lib/hover/hoverex-all.css" rel="stylesheet">
+  <link href="lib/jetmenu/jetmenu.css" rel="stylesheet">
+  <link href="lib/owl-carousel/owl-carousel.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/colors/magenta.css">
+
+  <!-- =======================================================
+    Template Name: MaxiBiz
+    Template URL: https://templatemag.com/maxibiz-bootstrap-business-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <div class="topbar clearfix">
+    <div class="container">
+      <div class="col-lg-12 text-right">
+        <div class="social_buttons">
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+          <!-- <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus"></i></a>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dribbble"><i class="fa fa-dribbble"></i></a>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="RSS"><i class="fa fa-rss"></i></a> -->
+        </div>
+      </div>
+    </div>
+    <!-- end container -->
+  </div>
+  <!-- end topbar -->
+
+  <header id="header" class="header"></header>
+  <!-- end header -->
+
+  <section class="section1 text-center">
+    <div class="container">
+        <div id="reactRoot"></div>
+        <script>!function (l) { function e(e) { for (var r, t, n = e[0], o = e[1], u = e[2], f = 0, i = []; f < n.length; f++)t = n[f], p[t] && i.push(p[t][0]), p[t] = 0; for (r in o) Object.prototype.hasOwnProperty.call(o, r) && (l[r] = o[r]); for (s && s(e); i.length;)i.shift()(); return c.push.apply(c, u || []), a() } function a() { for (var e, r = 0; r < c.length; r++) { for (var t = c[r], n = !0, o = 1; o < t.length; o++) { var u = t[o]; 0 !== p[u] && (n = !1) } n && (c.splice(r--, 1), e = f(f.s = t[0])) } return e } var t = {}, p = { 2: 0 }, c = []; function f(e) { if (t[e]) return t[e].exports; var r = t[e] = { i: e, l: !1, exports: {} }; return l[e].call(r.exports, r, r.exports, f), r.l = !0, r.exports } f.m = l, f.c = t, f.d = function (e, r, t) { f.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t }) }, f.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, f.t = function (r, e) { if (1 & e && (r = f(r)), 8 & e) return r; if (4 & e && "object" == typeof r && r && r.__esModule) return r; var t = Object.create(null); if (f.r(t), Object.defineProperty(t, "default", { enumerable: !0, value: r }), 2 & e && "string" != typeof r) for (var n in r) f.d(t, n, function (e) { return r[e] }.bind(null, n)); return t }, f.n = function (e) { var r = e && e.__esModule ? function () { return e.default } : function () { return e }; return f.d(r, "a", r), r }, f.o = function (e, r) { return Object.prototype.hasOwnProperty.call(e, r) }, f.p = "/"; var r = window.webpackJsonp = window.webpackJsonp || [], n = r.push.bind(r); r.push = e, r = r.slice(); for (var o = 0; o < r.length; o++)e(r[o]); var s = n; a() }([])</script>
+        <script src="/static/js/1.79d86f17.chunk.js"></script>
+        <script src="/static/js/main.4fbb2f0b.chunk.js"></script>
+    </div>
+    <!-- end container -->
+  </section>
+
+
+  <footer id="footer" class="footer">
+    <!-- end copyrights -->
+  </footer>
+  <!-- end footer -->
+  <div class="dmtop">Scroll to Top</div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/prettyphoto/js/prettyphoto.js"></script>
+  <script src="lib/isotope/isotope.min.js"></script>
+  <script src="lib/hover/hoverdir.js"></script>
+  <script src="lib/hover/hoverex.min.js"></script>
+  <script src="lib/unveil-effects/unveil-effects.js"></script>
+  <script src="lib/owl-carousel/owl-carousel.js"></script>
+  <script src="lib/jetmenu/jetmenu.js"></script>
+  <script src="lib/animate-enhanced/animate-enhanced.min.js"></script>
+  <script src="lib/jigowatt/jigowatt.js"></script>
+  <script src="lib/easypiechart/easypiechart.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+
+  <script>
+    ($("#header").load("header.html", (responseTxt, statusTxt, xhr) => {
+      if (statusTxt == "success")
+        $(".panel a").click(function (e) {
+          e.preventDefault();
+          var style = $(this).attr("class");
+          $(".jetmenu").removeAttr("class").addClass("jetmenu").addClass(style);
+        });
+      $().jetmenu();
+      if (statusTxt == "error")
+        console.log("Error: " + xhr.status + ": " + xhr.statusText);
+    })
+    );
+    $("#footer").load("footer.html");
+  </script>
+
+
+</body>
+
+</html>
