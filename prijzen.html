@@ -6,31 +6,16 @@
   <!-- JQUERY SHOULD BE THE FIRST TO LOAD -->
   <script src="lib/jquery/jquery.min.js"></script>
 
-  <!-- BEGIN -->
-  <!-- GOOGLE ANALYTICS -->
-  <!--
-      Script below adds the following scripttag to the page body:
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129737799-2"></script>
-      and activates Google Analiytics on the page.
-      This function is only executed when the user has enabled analytics in his cookiepreferences
-  -->
-  <script>
-    function activateGoogleAnalytics() {
-      var script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.src = "https://www.googletagmanager.com/gtag/js?id=UA-129737799-2";
-      script.async = true;
-      $("body").append(script);
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129737799-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-129737799-2');
+</script>
 
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'UA-129737799-2');
-    }
-  </script>
-  <!-- GOOGLE ANALYTICS -->
-  <!-- END -->
 
   <!-- BEGIN -->
   <!-- I-HAVE-COOKIES scripts -->
@@ -135,15 +120,38 @@
   <section class="section1 text-center">
     <div class="container">
       <div class="general-title">
-        <h3>Eerlijke prijzen. Dat is zeker.</h3>
-        <p>Wil je eerst met ons overleggen? Of heb je vragen over onze paketten, neem dan gerust contact met ons op</p>
+        <h3>Snel resultaat</h3>
+        <p>heeft u behoefte aan meerdere screenings, neem dan contact op met via ons <a href="contact.html">contactformulier</a> of 024 2340700</p>
         <hr>
       </div>
       <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
+              <div class="custom-box">
+                <div class="servicetitle">
+                  <h4>PEP screening</h4>
+                  <hr>
+                </div>
+                <div class="icn-main-container">
+                  <span class="icn-container">€19</span>
+                </div>
+                <p></p>
+                <div class="container list-box">
+                <ul class="pricing">
+                  <li>Screening op PEP lijsten</li>
+                  <li>Binnenlandse- en buitenlnadse PEP lijsten</li>
+                  <li>Direct resultaat</li>
+                  <li>Optioneel Bad news check</li>
+                  <li>Geen vaste contracten<br>&nbsp<br>&nbsp</li>
+                </ul>
+              </div>
+                <a class="btn btn-primary" href="mailto:info@naamscan.nl?subject=Aanvraag%20Screening%20PEP&body=Naam:%0ATelefoon:%0ABericht(optioneel):">>Start direct</a>
+              </div>
+            </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
           <div class="custom-box">
             <div class="servicetitle">
-              <h4>1 SanctieCheck</h4>
+              <h4>Sanctie Screening</h4>
               <hr>
             </div>
             <div class="icn-main-container">
@@ -155,18 +163,42 @@
               <li>9 sanctielijsten</li>
               <li>40+ watchlists</li>
               <li>PEP Check</li>
+              <li>Direct resultaat</li>
               <li>Optioneel Bad news check</li>
-              <li>Geen vaste contracten<br>&nbsp<br>&nbsp</li>
+              <li>Geen vaste contracten<br>&nbsp</li>
             </ul>
           </div>
-            <a class="btn btn-primary" href="mailto:info@naamscan.nl?subject=Aanvraag%20Screening%201%20Per%20Maand&body=Naam:%0ATelefoon:%0ABericht(optioneel):">>Bestel
-              nu</a>
+            <a class="btn btn-primary" href="mailto:info@naamscan.nl?subject=Aanvraag%20Screening&body=Naam:%0ATelefoon:%0ABericht(optioneel):">>Start direct</a>
           </div>
           <!-- end custombox -->
         </div>
         <!-- end col-4 -->
 
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
+            <div class="custom-box">
+              <div class="servicetitle">
+                <h4>PEP & Sanctie Screening</h4>
+                <hr>
+              </div>
+              <div class="icn-main-container">
+                <span class="icn-container">€59</span>
+              </div>
+              <p></p>
+              <div class="container list-box">
+              <ul class="pricing">
+                <li>Maatwerk</li>
+                <li>9 sanctielijsten</li>
+                <li>40+ watchlists</li>
+                <li>PEP Check</li>
+                <li>Optioneel Bad news check</li>
+                <li>Direct resultaat<br>&nbsp</li>
+              </ul>
+            </div>
+            <a class="btn btn-primary" href="mailto:info@naamscan.nl?subject=Aanvraag%20Screening%20PEP/Sanctie&body=Naam:%0ATelefoon:%0ABericht(optioneel):">>Start direct</a>
+            </div>
+          </div>
+
+        <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
           <div class="custom-box">
             <div class="servicetitle">
               <h4>5 SanctieChecks per maand</h4>
@@ -189,11 +221,9 @@
             <a class="btn btn-primary" href="mailto:info@naamscan.nl?subject=Aanvraag%20Screening%205%20Per%20Maand&body=Naam:%0ATelefoon:%0ABericht(optioneel):">>Bestel
               nu</a>
           </div>
-          <!-- end custombox -->
-        </div>
-        <!-- end col-4 -->
+        </div> -->
 
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
+        <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
           <div class="custom-box">
             <div class="servicetitle">
               <h4>10 SanctieChecks per maand</h4>
@@ -215,12 +245,9 @@
           </div>
             <a class="btn btn-primary" href="mailto:info@naamscan.nl?subject=Aanvraag%20Screening%2010%20Per%20Maand&body=Naam:%0ATelefoon:%0ABericht(optioneel):">>Bestel
               nu</a>
-          </div>
-          <!-- end custombox -->
-        </div>
-        <!-- end col-4 -->
+        </div> -->
 
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
+        <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
           <div class="custom-box">
             <div class="servicetitle">
               <h4>Maatwerk pakket</h4>
@@ -242,11 +269,9 @@
           </div>
             <a class="btn btn-primary" href="./contact.html?subject='Maatwerk Aanvraag'">>Neem contact op</a>
           </div>
-          <!-- end custombox -->
-        </div>
-        <!-- end col-4 -->
+        </div> -->
 
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
+       <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
           <div class="custom-box">
             <div class="servicetitle">
               <h4>1 PEP screening</h4>
@@ -268,11 +293,9 @@
             <a class="btn btn-primary" href="mailto:info@naamscan.nl?subject=Aanvraag%20Screening%201%20Per%20Maand&body=Naam:%0ATelefoon:%0ABericht(optioneel):">>Bestel
               nu</a>
           </div>
-          <!-- end custombox -->
-        </div>
-        <!-- end col-4 -->
+        </div> -->
 
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
+        <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
           <div class="custom-box">
             <div class="servicetitle">
               <h4>5 PEP screenings</h4>
@@ -294,11 +317,9 @@
             <a class="btn btn-primary" href="mailto:info@naamscan.nl?subject=Aanvraag%20Screening%201%20Per%20Maand&body=Naam:%0ATelefoon:%0ABericht(optioneel):">>Bestel
               nu</a>
           </div>
-          <!-- end custombox -->
-        </div>
-        <!-- end col-4 -->
+        </div> -->
 
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
+        <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
           <div class="custom-box">
             <div class="servicetitle">
               <h4>10 PEP screenings</h4>
@@ -320,11 +341,9 @@
             <a class="btn btn-primary" href="mailto:info@naamscan.nl?subject=Aanvraag%20Screening%201%20Per%20Maand&body=Naam:%0ATelefoon:%0ABericht(optioneel):">>Bestel
               nu</a>
           </div>
-          <!-- end custombox -->
-        </div>
-        <!-- end col-4 -->
+        </div> -->
 
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
+        <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 effect-slide-bottom in" data-effect="slide-bottom" style="transition: all 0.7s ease-in-out 0s;">
           <div class="custom-box">
             <div class="servicetitle">
               <h4>Maatwerk pakket</h4>
@@ -346,9 +365,7 @@
             <a class="btn btn-primary" href="mailto:info@naamscan.nl?subject=Aanvraag%20Screening%201%20Per%20Maand&body=Naam:%0ATelefoon:%0ABericht(optioneel):">>Bestel
               nu</a>
           </div>
-          <!-- end custombox -->
-        </div>
-        <!-- end col-4 -->
+        </div> -->
 
       </div>
     </div>

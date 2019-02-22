@@ -13,31 +13,16 @@
   <!-- JQUERY SHOULD BE THE FIRST TO LOAD -->
   <script src="lib/jquery/jquery.min.js"></script>
 
-  <!-- BEGIN -->
-  <!-- GOOGLE ANALYTICS -->
-  <!--
-      Script below adds the following scripttag to the page body:
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129737799-2"></script>
-      and activates Google Analiytics on the page.
-      This function is only executed when the user has enabled analytics in his cookiepreferences
-  -->
-  <script>
-    function activateGoogleAnalytics() {
-      var script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.src = "https://www.googletagmanager.com/gtag/js?id=UA-129737799-2";
-      script.async = true;
-      $("body").append(script);
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129737799-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-129737799-2');
+</script>
 
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'UA-129737799-2');
-    }
-  </script>
-  <!-- GOOGLE ANALYTICS -->
-  <!-- END -->
 
   <!-- BEGIN -->
   <!-- I-HAVE-COOKIES scripts -->
