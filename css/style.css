@@ -17,6 +17,7 @@ body {
   height: 100%;
   z-index: 1000;
   color: #696E74;
+  width:100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
