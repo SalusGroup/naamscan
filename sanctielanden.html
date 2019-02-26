@@ -2,15 +2,15 @@
 <html lang="NL">
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129737799-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129737799-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-129737799-2');
-</script>
+    gtag('config', 'UA-129737799-2');
+  </script>
 
 
 
@@ -52,30 +52,387 @@
 </head>
 
 <body>
-  <span class="metadata-marker" style="display: none;" data-region_tag="html-body"></span>    <h3>My Google Maps Demo</h3>
-  <!--The div element for the map -->
-  <div id="map"></div>
-  <script>
-<span class="metadata-marker" style="display: none;" data-region_tag="script-body"></span>// Initialize and add the map
-function initMap() {
-// The location of Uluru
-var uluru = {lat: -25.344, lng: 131.036};
-// The map, centered at Uluru
-var map = new google.maps.Map(
-    document.getElementById('map'), {zoom: 4, center: uluru});
-// The marker, positioned at Uluru
-var marker = new google.maps.Marker({position: uluru, map: map});
-}
-  </script>
-  <!--Load the API from the specified URL
-  * The async attribute allows the browser to render the page while the API loads
-  * The key parameter will contain your own API key (which is not needed for this tutorial)
-  * The callback parameter executes the initMap() function
-  -->
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-  </script>
-  
+  <div class="topbar clearfix">
+    <div class="container">
+      <div class="col-lg-12 text-right">
+        <div class="social_buttons">
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+          <!-- <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dribbble"><i class="fa fa-dribbble"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="RSS"><i class="fa fa-rss"></i></a> -->
+        </div>
+      </div>
+    </div>
+    <!-- end container -->
+  </div>
+  <!-- end topbar -->
+
+  <header id="header" class="header"></header>
+  <!-- end header -->
+
+  <section id="intros1">
+    <div class="container">
+      <div class="ror">
+        <div class="col-md-8 col-md-offset-2">
+          <h1>Sanctielanden</h1>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="clearfix"></div>
+
+  <section class="section1">
+      <div class="container clearfix">
+        <div class="content col-lg-10 col-md-11 col-sm-12 clearfix">
+<H1>Sanctielanden</H1>
+          </div>
+        </div>
+      </section>
+
+  <section class="section">
+    <div class="container clearfix">
+      <div class="content col-lg-12 col-md-12 col-sm-12 clearfix">
+        <table class="table table-hover table-sm">
+          <thead>
+            <tr>
+              <th scope="col">Land</th>
+              <th scope="col">FATF</th>
+              <th scope="col">EU</th>
+              <th scope="col">UN</th>
+              <th scope="col">OFAC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Afghanistan</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Bahama's</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Bosnië en Herzegovina</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Botswana</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Burundi</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Centraal-Afrikaanse Republiek</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>China</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Congo-Brazzaville</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>ja</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Congo-Kinshasa</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>ja</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Cuba</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Egypte</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Eritrea</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Ethiopië</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Ghana</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Guinee</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Guinee-Bissau</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Haïti</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Irak</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Iran</td>
+              <td>ja</td>
+              <td>ja</td>
+              <td>ja</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Jemen</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Kosovo</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Libanon</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Liberia</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Libië</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>ja</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Malediven</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Mali</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Moldavië</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Montenegro</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Myanmar</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Nicaragua</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Noord-Korea</td>
+              <td>ja</td>
+              <td>ja</td>
+              <td>ja</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Oekraïne</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Pakistan</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Rusland</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Servië</td>
+              <td>ja</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Soedan</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>ja</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Somalië</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Sri Lanka</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Syrië</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Trinidad en Tobago</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Tunesië</td>
+              <td>ja</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Venezuela</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Verenigde Staten</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Wit-Rusland</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Zimbabwe</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+            </tr>
+            <tr>
+              <td>Zuid-Soedan</td>
+              <td>&nbsp;</td>
+              <td>ja</td>
+              <td>ja</td>
+              <td>ja</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
   <footer id="footer" class="footer">
     <!-- end copyrights -->
@@ -115,7 +472,8 @@ var marker = new google.maps.Marker({position: uluru, map: map});
     })
     );
     $("#footer").load("footer.html");
-</script>
+  </script>
 
 </body>
+
 </html>
